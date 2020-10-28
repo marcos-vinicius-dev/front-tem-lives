@@ -1,0 +1,61 @@
+{
+  "name": "marcos",
+  "version": "0.0.1",
+  "description": "Tem Lives, Lives Hoje, Lives da semana, Live em casa, show",
+  "productName": "Tem Lives - confira a agenda de lives para assistir em casa",
+  "author": "marcos vinicius <marcvinicius.1997@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "quasar build -m pwa",
+    "dev": "quasar dev",
+    "dev:pwa": "quasar dev -m pwa",
+    "lint": "eslint --ext .gql,.js,.vue --ignore-path .gitignore ./",
+    "lintfix": "eslint --fix --ext .gql,.js,.vue --ignore-path .gitignore ./",
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "apollo-link-context": "^1.0.20",
+    "axios": "^0.19.2",
+    "connect-history-api-fallback": "^1.6.0",
+    "core-js": "3.0.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "quasar": "^1.0.0",
+    "serve-static": "^1.14.1",
+    "vue-social-sharing": "^3.0.0-beta.11"
+  },
+  "devDependencies": {
+    "@quasar/app": "2.0.0",
+    "@quasar/quasar-app-extension-apollo": "^1.0.0-beta.4",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.1.2",
+    "push-dir": "^0.4.1",
+    "workbox-webpack-plugin": "5.0.0"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ]
+}

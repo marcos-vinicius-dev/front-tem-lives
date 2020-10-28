@@ -1,0 +1,28 @@
+
+query lives ($date_gte: DateTime) {
+  lives(where: {
+    date_gte: $date_gte
+    }){
+    stage
+    id
+    createdAt
+    updatedAt
+    publishedAt
+    title
+    slug
+    date
+    coverImage {
+      url
+    }
+    excerpt
+    content {
+      raw
+      html
+      text
+    }
+    tags
+    seo {
+      stage
+    }
+  }
+}

@@ -1,0 +1,32 @@
+query filterLives ($_search: String, $date_gte: DateTime, $date_lte: DateTime, $category_some: CategoryWhereInput) {
+  lives (
+    where: {
+      _search: $_search,
+      date_gte: $date_gte,
+      date_lte: $date_lte,
+      category_some: $category_some
+    }
+  ){
+    stage
+    id
+    createdAt
+    updatedAt
+    publishedAt
+    title
+    slug
+    date
+    coverImage {
+      url
+    }
+    excerpt
+    content {
+      raw
+      html
+      text
+    }
+    tags
+    seo {
+      stage
+    }
+  }
+}

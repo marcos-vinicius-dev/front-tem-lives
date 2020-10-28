@@ -1,0 +1,30 @@
+query live ($slug: String) {
+  live(where: {
+    slug: $slug
+    }){
+    stage
+    id
+    createdAt
+    updatedAt
+    publishedAt
+    title
+    slug
+    date
+    coverImage {
+      url
+    }
+    excerpt
+    content {
+      raw
+      html
+      text
+    }
+    tags
+    seo {
+      stage
+      title
+      description
+      keywords
+    }
+  }
+}
